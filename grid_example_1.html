@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 20px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 125px 125px 125px; /* Can alsi use A) % grid-template-columns: 50% 50% 50%; OR B) repeat: grid-template-columns: repeat(3, 125px);*/
+        grid-template-rows: 125px 125px 125px;
+      }
+
+      /* OTHER GRID EXAMPLES BELOW */
+
+      /* .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(3, 150px);
+      } */
+
+      /* .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(3, 150px);
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

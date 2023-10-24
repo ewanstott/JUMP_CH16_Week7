@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div div {
+        width: 80px;
+        height: 90px;
+        background-color: red;
+        margin: 10px;
+      }
+
+      .grid-container {
+        display: grid;
+        background-color: aquamarine;
+        grid-template-columns: repeat(3, 125px);
+        grid-template-rows: repeat(3, 125px);
+        grid-gap: 10px;
+      }
+      .five {
+        grid-row-start: -1;
+        grid-column-start: -1;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div>1 Lorem ipsum dolor sit</div>
+      <div>2 Lorem ipsum dolor sit</div>
+      <div>3 Lorem ipsum dolor sit</div>
+      <div>4 Lorem ipsum dolor sit</div>
+      <div class="five">5 Lorem ipsum dolor sit</div>
+      <div>6 Lorem ipsum dolor sit</div>
+      <div>7 Lorem ipsum dolor sit</div>
+      <div>8 Lorem ipsum dolor sit</div>
+      <div>9 Lorem ipsum dolor sit</div>
+    </div>
+  </body>
+</html>

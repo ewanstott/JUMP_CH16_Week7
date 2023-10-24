@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+
+        grid-template-areas:
+          "header header header"
+          "nav main main"
+          "footer footer footer";
+      }
+
+      .header {
+        grid-area: header;
+        background-color: goldenrod;
+        text-align: center;
+      }
+
+      .main {
+        grid-area: nav;
+        background-color: aquamarine;
+      }
+      .nav {
+        grid-area: main;
+        background-color: greenyellow;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: grey;
+      }
+
+      @media screen and (min-width: 500px) {
+        .grid-container {
+            "header header header"
+          "main main main"
+          "footer footer footer";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header"><h1>Header</h1></div>
+      <div class="nav">
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+      </div>
+      <div class="main">
+        <section><h2>Section</h2></section>
+        <section><h2>Section</h2></section>
+      </div>
+      <div class="footer">Copyright 2023</div>
+    </div>
+  </body>
+</html>
