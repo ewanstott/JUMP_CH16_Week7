@@ -1,20 +1,13 @@
-ul {
-  background-color: red;
-
-  li {
-    background-color: green;
-
-    &:hover,
-    &:focus-within {
-      background-color: blue;
-    }
-  }
-}
+$padding-big: 50px;
+$padding-small: 50px;
+$important-colour: blue;
+$warning-colour: yellow;
 
 div {
-  background-color: pink;
+  padding: $padding-big;
+  background-color: $warning-colour;
+}
 
-  p {
-    color: yellow;
-  }
+p {
+  color: $important-colour;
 }
