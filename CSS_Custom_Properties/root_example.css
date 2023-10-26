@@ -1,0 +1,17 @@
+/* Custom Properties  */
+
+:root {
+  --special-colour-1: #ff0000;
+}
+
+div {
+  background-color: var(--special-colour-1);
+}
+
+p {
+  color: var(--special-colour-1);
+}
+
+button {
+  border: var(--special-colour-1);
+}

@@ -1,0 +1,16 @@
+ul {
+  background-color: red;
+}
+ul li {
+  background-color: green;
+}
+ul li:hover, ul li:focus-within {
+  background-color: blue;
+}
+
+div {
+  background-color: pink;
+}
+div p {
+  color: yellow;
+}/*# sourceMappingURL=styles.css.map */

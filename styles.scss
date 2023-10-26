@@ -1,0 +1,20 @@
+ul {
+  background-color: red;
+
+  li {
+    background-color: green;
+
+    &:hover,
+    &:focus-within {
+      background-color: blue;
+    }
+  }
+}
+
+div {
+  background-color: pink;
+
+  p {
+    color: yellow;
+  }
+}
